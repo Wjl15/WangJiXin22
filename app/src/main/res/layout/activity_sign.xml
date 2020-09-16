@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@android:dimen/app_icon_size"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:paddingTop="@android:dimen/app_icon_size"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/sign_text"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.00"
+        android:layout_marginTop="20dp"
+        android:hint="请输入签名"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:textColorHint="@android:color/darker_gray"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <Button
+        android:id="@+id/sign_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorAccent"
+        android:text="完成"
+        android:textSize="20dp"
+        android:textColor="#ffffff"/>
+</LinearLayout>

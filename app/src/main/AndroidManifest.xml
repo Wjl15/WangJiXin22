@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wangjixin22.wangjixin">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_manager"
+        android:label="@string/custom_label"
+        android:roundIcon="@mipmap/ic_manager"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:testOnly="false">
+        <activity android:name=".lect10Net.SignActivity"/>
+        <activity android:name=".lect10Net.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".lect10Net.list.NetListActivity"/>
+        <activity
+            android:name=".lect10Net.WebActivity"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".lect10Net.NetActivity"/>
+    </application>
+
+</manifest>
